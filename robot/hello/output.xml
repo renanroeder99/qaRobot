@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.10.3 on win32)" generated="20220316 21:28:55.898" rpa="false" schemaversion="2">
+<suite id="s1" name="Test" source="d:\qaninja\robot\test.robot">
+<test id="s1-t1" name="Deve retornar mensagem de boas vindas">
+<kw name="Welcome" library="app">
+<var>${result}</var>
+<arg>Renan</arg>
+<msg timestamp="20220316 21:28:55.928" level="INFO">${result} = opa, e ai Renan, Bem vindo</msg>
+<status status="PASS" starttime="20220316 21:28:55.928" endtime="20220316 21:28:55.928"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>${result}</arg>
+<arg>opa, e ai Renan, Bem vindo</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220316 21:28:55.928" endtime="20220316 21:28:55.929"/>
+</kw>
+<status status="PASS" starttime="20220316 21:28:55.927" endtime="20220316 21:28:55.929"/>
+</test>
+<status status="PASS" starttime="20220316 21:28:55.899" endtime="20220316 21:28:55.931"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
